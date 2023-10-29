@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    margin:0.5rem 0 0 1rem;
+    padding:4rem;
+    background-color: white;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-left:7rem;
+}
+.handwritten{
+    margin:2rem 0rem 3rem 10rem;
+    display: flex;
+    flex-direction: row;
+    gap:10rem;
+}
+.handwritten h4{
+    color:rgb(255,255,6);
+    background-color:rgb(4, 4, 74);
+    border:1px solid rgb(4, 4, 74);
+    padding: .6rem;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        margin: 0.5rem 0;
+        padding: 1rem; /* Further reduce padding for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-left: 0.5rem; /* Adjust the margin for better alignment on smaller screens */
+    }
+
+    .handwritten {
+        margin: 1rem 0; /* Further adjust margins for better spacing on smaller screens */
+    }
+
+    .handwritten h4 {
+        padding: 0.3rem; /* Reduce padding for smaller screens */
+    }
+}
