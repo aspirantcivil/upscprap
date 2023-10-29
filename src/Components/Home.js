@@ -7,17 +7,24 @@ import Handwritten from '../Notes/Handwritten';
 const Home = () => {
   const [news, setNews] = useState([]);
   const [displayedNews, setDisplayedNews] = useState(5);
+  const [loading, setLoading] = useState(true);
   const apiKey = 'cbc2956d46c847b4a24c6b5a6bddba81';
 
   useEffect(() => {
     fetch(`https://newsapi.org/v2/everything?q=UPSC&apiKey=${apiKey}`)
       .then((response) => response.json())
       .then((data) => {
-        setNews(data.articles);
+        if (data.articles) {
+          setNews(data.articles);
+        } else {
+          setNews([]);
+        }
+        setLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching news:', error);
         setNews([]);
+        setLoading(false);
       });
   }, [apiKey]);
 
@@ -40,7 +47,7 @@ const Home = () => {
   return (
     <div className="Component">
       <div>
-        {/* header section */}
+        {/* Header section */}
         <header className="header-sec">
           <div>
             <img src={PreparationImage} alt="Preparation" className="img" />
@@ -64,10 +71,14 @@ const Home = () => {
           <div className="quote">
             <p>"Stay determined, study hard, and let your UPSC journey be the road to your dreams."</p>
           </div>
+        </section>
 
-          {/* News section */}
-          <section className="news-sec" ref={newsRef}>
-            <h2>Latest News:</h2>
+        {/* News section */}
+        <section className="news-sec" ref={newsRef}>
+          <h2>Latest News:</h2>
+          {loading ? (
+            <p>Loading news...</p>
+          ) : (
             <ul>
               {news.slice(0, displayedNews).map((article, index) => (
                 <li key={index}>
@@ -77,17 +88,17 @@ const Home = () => {
                 </li>
               ))}
             </ul>
-            {displayedNews < news.length ? (
-              <div>
-                <button onClick={loadMoreNews}>Read More</button>
-                {displayedNews > 5 && (
-                  <button className="read-less-button" onClick={loadLessNews}>
-                    Read Less
-                  </button>
-                )}
-              </div>
-            ) : null}
-          </section>
+          )}
+          {displayedNews < news.length ? (
+            <div>
+              <button onClick={loadMoreNews}>Read More</button>
+              {displayedNews > 5 && (
+                <button className="read-less-button" onClick={loadLessNews}>
+                  Read Less
+                </button>
+              )}
+            </div>
+          ) : null}
         </section>
         <section className="notes" ref={notesRef}>
           <Note />
