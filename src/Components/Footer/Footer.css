@@ -66,11 +66,12 @@
 /* Mobile and Tablet Styles */
 @media (max-width: 768px) {
   .contact-info, .social-links {
-      flex: 100%; /* Full width on smaller screens */
-      margin-bottom: 1.5rem; /* Add some space between sections */
+    flex: 1; /* Equal width on smaller screens */
+    margin-bottom: 1.5rem; /* Add some space between sections */
   }
 
   .footer-content {
-      justify-content: center;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items on smaller screens */
   }
 }
