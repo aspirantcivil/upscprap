@@ -9,9 +9,9 @@ const Header = () => {
             <div>
           <h3><a href="#home">Home</a></h3>
           </div>
-          <div>
+          {/* <div>
           <h3><a href="#news">News</a></h3>
-          </div>
+          </div> */}
           <div>
           <h3><a href="#notes">Notes</a></h3>
           </div>
