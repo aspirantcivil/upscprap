@@ -1,0 +1,50 @@
+.sec {
+  background-color: #f8f8f8;
+  margin: 5rem auto;
+  padding: 5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.practice-info h2 {
+  color: #04044a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.practice-info p {
+  line-height: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.practice-info a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  background-color: #04044a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+  .sec {
+      padding: 2rem;
+  }
+
+  .practice-info h2 {
+      font-size: 1.5rem;
+  }
+
+  .practice-info p {
+      line-height: 1.4rem;
+  }
+
+  .practice-info a {
+      padding: 8px 16px;
+      margin-top: 1rem;
+  }
+}

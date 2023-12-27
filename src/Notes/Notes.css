@@ -1,218 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f899;
 }
 
 .notes {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.head2 {
-    font-size: 2rem;
-     margin:1rem;
-    padding-left:5rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+  padding: 2rem 1rem;
 }
 
 .notes p {
-    padding-left: 8rem;
-    margin: 1rem;
-    font-size: 1.2rem;
-    color:  rgb(4, 4, 74);
-    font-weight: bold;
+  padding-left: 5rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #04044a;
 }
 
 .english-sec {
-    padding-left: 2rem;
-    margin: 0.5rem;
+  padding-left: 1rem;
+  margin: 0.5rem;
 }
 
 .Ncert-sec {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading {
-    font-size: 1.4rem;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.e-book-old {
-    padding:3rem;
-    display: flex;
-    flex-direction: row;
-    gap:3rem;
-    background-color: white;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .Ncert-sec .heading {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 1.2rem 0rem 0rem 4rem;
+}
+
+.e-book-old {
+  padding-left: 8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 13rem;
 }
 
 .e-book-old ul {
-    display: flex;
-    flex-direction:column;
-    gap: 1rem;
-   
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
-.e-book-old .head5{
-    color:rgb(255, 255, 6);
-    background-color:rgb(4, 4, 74);
-    border:1px solid rgb(4, 4, 74);
-    padding: 1rem;
+
+.e-book-old .head5 {
+  color: white;
+  background-color: #04044a;
+  border: 1px solid #04044a;
+  padding: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
 }
+
 li {
-    margin: 0 0 1rem 1.4rem;
-    list-style-type: none;
+  margin: 0.5rem 0;
+  list-style-type: none;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(4, 4, 74);
-    font-weight: bold;
+.list a {
+  text-decoration: none;
+  color: #04044a;
+  padding-left: 6.2rem;
 }
 
-a:hover {
-    text-decoration: underline;
+.list a:hover {
+  text-decoration: underline;
 }
 
-.e-book{
-    padding-left: 2rem;
-  }
-  .e-book .heading{
-     margin-bottom:1rem;
-  }
-  .e-book-new{
-    display: flex;
-    flex-direction: row;
-    gap:3rem;
-    padding: 2rem;
-   
-  }
-.new-book .category{
-    padding-bottom: 1.5rem;
-    padding-left: 1rem;
-    color:rgb(255, 255, 6);
-    padding:.9rem;
-    text-align: center;
-    border: 1px solid rgb(4, 4, 74);
-    background-color:rgb(4, 4, 74);
+.e-book .heading {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
 }
-/* CSS for the footer */
-.footer {
-    background-color: rgb(4, 4, 74);
-    color: white;
-    padding: 2rem 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .contact-info, .social-links {
-    flex: 1;
-    padding: 1rem;
-  }
-  
-  .contact-info h3, .social-links h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .contact-info p, .social-links p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color:#ccc;
-  }
-  
-  .contact-info p:last-child, .social-links p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .social-links a {
-    display: block;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
-    margin-bottom: 0.5rem;
-  }
-  
-  .social-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    background-color: rgb(4, 4, 74);
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  .footer-bottom p {
-    font-size: 1rem;
-    color:#ccc;
-    margin: 0;
-  }
-  
-  
-/* Mobile and Tablet Styles */
+.e-book-new {
+  display: flex;
+  flex-direction: row;
+  gap: 5.2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.new-book .category {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-align: center;
+  border: 1px solid #04044a;
+  background-color: #04044a;
+  border-radius: 8px;
+}
+.new-book a {
+  color: #04044a;
+  text-decoration: none;
+}
+.new-book a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for Tablet and Smaller Screens */
 @media (max-width: 768px) {
-  .head2 {
-      font-size: 1.5rem;
-      padding-left: 1rem;
+  .e-book-old {
+    padding-left: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .notes p {
-      padding-left: 1rem;
-      font-size: 1rem;
+  .e-book-old ul {
+    padding-left: 0;
   }
 
-  .e-book-old ul,
+  .list a {
+    padding-left: 0;
+  }
+
   .e-book-new {
-      flex-direction: column;
-  }
-
-  .e-book-old .head5 {
-      padding: 0.5rem;
-  }
-
-  .footer-content {
-      flex-direction: row;
-  }
-
-  .contact-info,
-  .social-links {
-      flex: 1;
-  }
-
-  .contact-info h3,
-  .social-links h3 {
-      font-size: 1.2rem;
-  }
-
-  .contact-info p,
-  .social-links p {
-      font-size: 1rem;
-  }
-
-  .social-links a {
-      font-size: 1rem;
-      margin-bottom: 0.3rem;
-  }
-
-  .e-book,
-  .e-book-new {
-      padding-left: 1rem;
+    flex-direction: column;
+    gap: 2rem;
   }
 }

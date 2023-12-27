@@ -38,13 +38,12 @@ import E5 from '../Pdf/Ncert/new/Economics/Economics12-P2.pdf';
 
 const Notes = () => {
     return (
-    <section className='notes'>
+    <section className='notes' id="notes">
           <div>
-              <h2 className='head2'>Notes:</h2>
-              <p>You can download notes from here</p>
+            <p> You can download study materials, practice papers, and more from here. Explore our resources to enhance your preparation and excel in your exams!</p>
               <div className='english-sec'>
                 <div className='Ncert-sec'>
-                <h4 className='heading'>NCERT OLD BOOKS</h4>
+                <h4 className='heading'>NCERT OLD BOOKS:</h4>
                     <div className='e-book-old'>
                      <div>
                       <ul className='list'>
@@ -86,8 +85,10 @@ const Notes = () => {
                       </ul>
                       </div>
                     </div>
+
+
                     <div className='e-book'>
-                      <h3 className='heading'>NCERT NEW BOOKS</h3>
+                      <h3 className='heading'>NCERT NEW BOOKS:</h3>
                       <div className='e-book-new'>
                        <div className='new-book'>
                           <h4 className='category'> Art and Culture</h4>

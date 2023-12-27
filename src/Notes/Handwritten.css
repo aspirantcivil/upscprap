@@ -1,32 +1,44 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 .container{
-    margin:0.5rem 0 0 1rem;
-    padding:4rem;
-    background-color: white;
+    padding-top:3rem;
+    background-color: #f8f8f899;
 }
 h3{
-    font-family: 'Times New Roman', Times, serif;
-    font-size:1.5rem;
-    font-weight: bold;
+    font-size:1.2rem;
     margin-left:7rem;
+    background-color: #f8f8f899;
 }
 .handwritten{
-    margin:2rem 0rem 3rem 10rem;
     display: flex;
     flex-direction: row;
-    gap:10rem;
+    gap:3rem;
+    padding-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f8f899;
 }
 .handwritten h4{
-    color:rgb(255,255,6);
-    background-color:rgb(4, 4, 74);
-    border:1px solid rgb(4, 4, 74);
-    padding: .6rem;
+    color:white;
+    background-color: #04044a;
+    border:1px solid  #04044a;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius:.5rem;
 }
 
+.handwritten a{
+    text-decoration: none;
+    text-align: center;
+    color: #04044a;
+    font-size:.9rem;
+}
+
+.handwritten a:hover{
+    text-decoration: underline;
+}
 /* Mobile and Tablet Styles */
 @media (max-width: 768px) {
     .container {
@@ -41,6 +53,8 @@ h3{
 
     .handwritten {
         margin: 1rem 0; /* Further adjust margins for better spacing on smaller screens */
+        flex-direction: column; /* Change to a column layout on smaller screens */
+        align-items: center; /* Center align items in the column layout */
     }
 
     .handwritten h4 {
